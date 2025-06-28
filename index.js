@@ -227,25 +227,71 @@
 // const array = [1, 5, 9, -1, 2, -2, 3, -3, -5]
 // console.log(solve(array));
 
-function solve(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        let opposite = arr.indexOf(-arr[i]);
-        if (opposite !== -1) {
-            // Set both to 0 (mark as matched)
-            arr[i] = 0;
-            arr[opposite] = 0;
-        }
-    }
+// function solve(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         let opposite = arr.indexOf(-arr[i]);
+//         if (opposite !== -1) {
+//             // Set both to 0 (mark as matched)
+//             arr[i] = 0;
+//             arr[opposite] = 0;
+//         }
+//     }
 
-    // Now find the number that's not 0
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] !== 0) {
-            return arr[i];
-        }
-    }
+//     // Now find the number that's not 0
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] !== 0) {
+//             return arr[i];
+//         }
+//     }
 
-    return null; // if all are matched
-}
+//     return null; // if all are matched
+// }
 
-const array = [1, 5, 9, -1, 2, -2, 3, -3, -5];
-console.log(solve(array)); // Output: 9
+// const array = [1, 5, 9, -1, 2, -2, 3, -3, -5];
+// console.log(solve(array)); // Output: 9
+
+
+// let str = "Botirov Abdulaziz";
+// let natija = "";
+
+// natija += str[0].toUpperCase() + ".";
+// let a = ""
+// for (let i = 0; i < str.length; i ++){
+//     if(str[i] == " "){
+//         a = str[i + 1];
+//     }
+// }
+// console.log(natija + a);
+
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const divisor = 2;
+
+// function divisibleBy(numbers, divisor){
+//     const result = [];
+
+//     for(let i = 0; i < numbers.length; i++){
+//         if(numbers[i] % divisor == 0){
+//             result.push(numbers[i]);
+//         }
+//     }
+//     return result;
+// };
+
+// console.log(divisibleBy(numbers, divisor));
+
+// let dna = "DTMTT"
+// function DNAtoRNA(dna) {
+//     // let result = ""
+//     // for(let i = 0; i < dna.length; i++){
+//     //     if(dna[i] == "T"){
+//     //         result += "U";
+//     //     }else{
+//     //         result += dna[i];
+//     //     }
+//     // }
+//     // return result;
+
+//     let result = dna.replaceAll("T", "U")
+//     return result;
+// }
+// console.log(DNAtoRNA(dna));
