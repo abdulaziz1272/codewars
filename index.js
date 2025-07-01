@@ -333,27 +333,41 @@
 
 
 
+// function counting(num) {
+//     let positiveSum = 0;
+//     let negativeSum = 0;
+//     const result = [];
 
-function counting(num) {
-    let positiveSum = 0;
-    let negativeSum = 0;
+//     for(let i = 0; i < num.length; i++){
+//         if(num[i] > 0){
+//             positiveSum += num[i];
+//         }else{
+//             negativeSum += num[i];
+//         }
+//     }
+//     result.push(positiveSum);
+//     result.push(negativeSum);
+
+//     return result
+// }
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
+// console.log(counting(numbers));
+
+
+
+
+function divisibleBy(numbers, divisor) {
     const result = [];
-
-    for(let i = 0; i < num.length; i++){
-        if(num[i] > 0){
-            positiveSum += num[i];
-        }else{
-            negativeSum += num[i];
+    for(let i = 0; i < numbers.length; i++){
+        if(numbers[i] % divisor == 0){
+            result.push(numbers[i]);
         }
     }
-    result.push(positiveSum);
-    result.push(negativeSum);
-
-    return result
+    return result;
 }
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
-console.log(counting(numbers));
+console.log(divisibleBy([1, 2, 3, 4, 5, 6], 3));
 
 
 
