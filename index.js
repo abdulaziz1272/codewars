@@ -298,22 +298,37 @@
 
 
 
-function findDifference(a, b){
-    let aSum = 0;
-    let bSum = 0;
+// function findDifference(a, b){
+//     let aSum = 0;
+//     let bSum = 0;
 
-    for(let i = 0; i < a.length; i++){
-        aSum += a[i];
-    }
-    for(let n = 0; n < b.length; n++){
-        bSum += b[n];
-    }
+//     for(let i = 0; i < a.length; i++){
+//         aSum += a[i];
+//     }
+//     for(let n = 0; n < b.length; n++){
+//         bSum += b[n];
+//     }
     
-    if(aSum - bSum > 0){
-        return aSum - bSum;
-    }else{
-        return bSum - aSum;
+//     if(aSum - bSum > 0){
+//         return aSum - bSum;
+//     }else{
+//         return bSum - aSum;
+//     }
+// }
+
+// console.log(findDifference([10, 10 , 10], [10, 10, 11]));
+
+
+function removeEverySecond(arr) {
+    const result = [];
+    for (let i = 0; i < arr.length; i += 2) {
+        result.push(arr[i]);
     }
+    return result;
 }
 
-console.log(findDifference([10, 10 , 10], [10, 10, 11]));
+const array = ["Keep", "Remove", "Keep", "Remove", "Keep"];
+
+console.log(removeEverySecond(array));
+
+
