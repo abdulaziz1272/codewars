@@ -295,3 +295,25 @@
 //     return result;
 // }
 // console.log(DNAtoRNA(dna));
+
+
+
+function findDifference(a, b){
+    let aSum = 0;
+    let bSum = 0;
+
+    for(let i = 0; i < a.length; i++){
+        aSum += a[i];
+    }
+    for(let n = 0; n < b.length; n++){
+        bSum += b[n];
+    }
+    
+    if(aSum - bSum > 0){
+        return aSum - bSum;
+    }else{
+        return bSum - aSum;
+    }
+}
+
+console.log(findDifference([10, 10 , 10], [10, 10, 11]));
