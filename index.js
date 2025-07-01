@@ -403,23 +403,23 @@
 // console.log(capitals("aAbB")); // [0, 5, 8]
 
 
-function generateNumber(squad, n){
-    if(!squad.includes(n)){
-        return n;
-    }else{
-        for(let i = 1; i <= 9; i++){
-            for(let t = 1; t<= 9; t++){
-                if(i + t === n){
-                    const result = Number("" + i + t);
+// function generateNumber(squad, n){
+//     if(!squad.includes(n)){
+//         return n;
+//     }else{
+//         for(let i = 1; i <= 9; i++){
+//             for(let t = 1; t<= 9; t++){
+//                 if(i + t === n){
+//                     const result = Number("" + i + t);
 
-                    if (!squad.includes(formedNumber)) {
-                        return result;
-                    }
-                }
-            }
-        }
-    }
-    return null;
-}
+//                     if (!squad.includes(formedNumber)) {
+//                         return result;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     return null;
+// }
 
-console.log(generateNumber([12, 5, 86, 7, 34], 5))
+// console.log(generateNumber([12, 5, 86, 7, 34], 5))
