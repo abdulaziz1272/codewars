@@ -319,16 +319,41 @@
 // console.log(findDifference([10, 10 , 10], [10, 10, 11]));
 
 
-function removeEverySecond(arr) {
+// function removeEverySecond(arr) {
+//     const result = [];
+//     for (let i = 0; i < arr.length; i += 2) {
+//         result.push(arr[i]);
+//     }
+//     return result;
+// }
+
+// const array = ["Keep", "Remove", "Keep", "Remove", "Keep"];
+
+// console.log(removeEverySecond(array));
+
+
+
+
+function counting(num) {
+    let positiveSum = 0;
+    let negativeSum = 0;
     const result = [];
-    for (let i = 0; i < arr.length; i += 2) {
-        result.push(arr[i]);
+
+    for(let i = 0; i < num.length; i++){
+        if(num[i] > 0){
+            positiveSum += num[i];
+        }else{
+            negativeSum += num[i];
+        }
     }
-    return result;
+    result.push(positiveSum);
+    result.push(negativeSum);
+
+    return result
 }
 
-const array = ["Keep", "Remove", "Keep", "Remove", "Keep"];
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
+console.log(counting(numbers));
 
-console.log(removeEverySecond(array));
 
 
