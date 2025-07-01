@@ -357,17 +357,36 @@
 
 
 
-function divisibleBy(numbers, divisor) {
-    const result = [];
-    for(let i = 0; i < numbers.length; i++){
-        if(numbers[i] % divisor == 0){
-            result.push(numbers[i]);
+// function divisibleBy(numbers, divisor) {
+//     const result = [];
+//     for(let i = 0; i < numbers.length; i++){
+//         if(numbers[i] % divisor == 0){
+//             result.push(numbers[i]);
+//         }
+//     }
+//     return result;
+// }
+
+// console.log(divisibleBy([1, 2, 3, 4, 5, 6], 3));
+
+
+
+function XO(str) {
+    let xCount = 0;
+    let oCount = 0;
+
+    for(let i = 0; i < str.length; i++){
+        if(str[i] == "x" || str[i] == "X"){
+            xCount ++;
+        }else if(str[i] == "o" || str[i] == "O"){
+            oCount ++;
         }
     }
-    return result;
+    if(xCount == oCount){
+        return true;
+    }else{
+        return false;
+    }
 }
-
-console.log(divisibleBy([1, 2, 3, 4, 5, 6], 3));
-
-
+console.log(XO("xxOopso"));
 
