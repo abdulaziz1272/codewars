@@ -371,22 +371,33 @@
 
 
 
-function XO(str) {
-    let xCount = 0;
-    let oCount = 0;
+// function XO(str) {
+//     let xCount = 0;
+//     let oCount = 0;
 
-    for(let i = 0; i < str.length; i++){
-        if(str[i] == "x" || str[i] == "X"){
-            xCount ++;
-        }else if(str[i] == "o" || str[i] == "O"){
-            oCount ++;
+//     for(let i = 0; i < str.length; i++){
+//         if(str[i] == "x" || str[i] == "X"){
+//             xCount ++;
+//         }else if(str[i] == "o" || str[i] == "O"){
+//             oCount ++;
+//         }
+//     }
+//     if(xCount == oCount){
+//         return true;
+//     }else{
+//         return false;
+//     }
+// }
+// console.log(XO("xxOopso"));
+
+
+var capitals = function (word) {
+    const result = [];
+	for(let i = 0; i < word.length; i++){
+        if(word[i] != word[i].toLowerCase()){
+            result.push(i);
         }
     }
-    if(xCount == oCount){
-        return true;
-    }else{
-        return false;
-    }
-}
-console.log(XO("xxOopso"));
-
+    return result;
+};
+console.log(capitals("aAbB")); // [0, 5, 8]
