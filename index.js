@@ -391,13 +391,13 @@
 // console.log(XO("xxOopso"));
 
 
-var capitals = function (word) {
-    const result = [];
-	for(let i = 0; i < word.length; i++){
-        if(word[i] != word[i].toLowerCase()){
-            result.push(i);
-        }
-    }
-    return result;
-};
-console.log(capitals("aAbB")); // [0, 5, 8]
+// var capitals = function (word) {
+//     const result = [];
+// 	for(let i = 0; i < word.length; i++){
+//         if(word[i] != word[i].toLowerCase()){
+//             result.push(i);
+//         }
+//     }
+//     return result;
+// };
+// console.log(capitals("aAbB")); // [0, 5, 8]
