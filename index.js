@@ -435,16 +435,33 @@
 // console.log(remainder(22, 3));
 
 
-function geometricSequenceElements(a, r, n){
-    let result = '';
+// function geometricSequenceElements(a, r, n){
+//     let result = '';
 
-    for (let i = 0; i < n; i++){
-        if(i == n - 1){
-            result += "" + a * r ** i;
-        }else{
-            result += "" + a * r ** i + ", "
-        }
-    }
-    return result;
-}
-console.log(geometricSequenceElements(2, 3, 5));
+//     for (let i = 0; i < n; i++){
+//         if(i == n - 1){
+//             result += "" + a * r ** i;
+//         }else{
+//             result += "" + a * r ** i + ", "
+//         }
+//     }
+//     return result;
+// }
+// console.log(geometricSequenceElements(2, 3, 5));
+
+
+// function equableTriangle(a, b, c) {
+//     const perimeter = a + b + c;
+//     const s = perimeter / 2;
+
+//     const area = Math.sqrt(
+//         s * (s - a) * (s - b) * (s - c)
+//     );
+
+//     // Allowing for floating point tolerance
+//     return Math.abs(area - perimeter) < 1e-6;
+// }
+// console.log(equableTriangle(6, 8, 10))
+
+
+
