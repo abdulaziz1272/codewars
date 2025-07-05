@@ -308,7 +308,7 @@
 //     for(let n = 0; n < b.length; n++){
 //         bSum += b[n];
 //     }
-    
+
 //     if(aSum - bSum > 0){
 //         return aSum - bSum;
 //     }else{
@@ -423,3 +423,13 @@
 // }
 
 // console.log(generateNumber([12, 5, 86, 7, 34], 5))
+
+
+const remainder = (D, d) => {
+    if (D / d == Math.round(D / d)){
+        return 0;
+    }else{
+        return D - Math.floor(D / d) * d
+    }
+};
+console.log(remainder(22, 3));
