@@ -425,11 +425,26 @@
 // console.log(generateNumber([12, 5, 86, 7, 34], 5))
 
 
-const remainder = (D, d) => {
-    if (D / d == Math.round(D / d)){
-        return 0;
-    }else{
-        return D - Math.floor(D / d) * d
+// const remainder = (D, d) => {
+//     if (D / d == Math.round(D / d)){
+//         return 0;
+//     }else{
+//         return D - Math.floor(D / d) * d
+//     }
+// };
+// console.log(remainder(22, 3));
+
+
+function geometricSequenceElements(a, r, n){
+    let result = '';
+
+    for (let i = 0; i < n; i++){
+        if(i == n - 1){
+            result += "" + a * r ** i;
+        }else{
+            result += "" + a * r ** i + ", "
+        }
     }
-};
-console.log(remainder(22, 3));
+    return result;
+}
+console.log(geometricSequenceElements(2, 3, 5));
