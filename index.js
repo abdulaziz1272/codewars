@@ -465,3 +465,30 @@
 
 
 
+// function babySharkLyrics(){
+//     const sharks = ["Baby", "Mommy", "Daddy", "Grandma", "Grandpa"];
+//     let result = "";
+
+//     for(let i = 0; i < sharks.length; i++){
+//         function song(family){
+//             for(let a = 0; a < 3; a++){
+//                 result += family + " shark, doo doo doo doo doo doo "
+//             }
+//             result += family + " shark! "
+//         }
+//         song(sharks[i])
+//     }
+//     result += "Let's go hunt! Run away,…"
+//     return result
+
+// }
+// console.log(babySharkLyrics());
+
+
+
+// function babySharkLyrics(){
+// return['Baby','Mommy','Daddy','Grandma','Grandpa'].map(t=>([...Array(3)].map(_=>t+' shark, doo doo doo doo doo doo').concat(t+' shark!')).join`\n`).concat([...Array(3)].map(_=>"Let's go hunt, doo doo doo doo doo doo").join`\n`,"Let's go hunt!","Run away").join`\n`+',…'
+// }
+// console.log(babySharkLyrics());
+
+
